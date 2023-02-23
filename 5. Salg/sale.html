@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="./sale.css">
+    <script defer type="module" src="./salesGenerate.js"></script>
+    <script defer type="module" src="./salesModule.js"></script>
+    <script defer type="module" src="./toggleSales.js"></script>
+    
+
+
+    <title>Salg</title>
+</head>
+
+
+
+<body>
+
+    <header>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- Navbaren - Følger alle sidene -->
+        <nav class="navbar header" role="navigation" aria-label="main navigation">
+
+            <!-- Logoen i navbaren - linker til startsiden -->
+            <div class="navbar-brand">
+                <a class="navbar-item logo" href="../1. Startside/startside.html">
+                    <img src="../images/logo.png" alt="logo" style="max-height: 100px;">
+                </a>
+
+                <!-- Hamburger meny - kommer frem ved visning på små skjermer-->
+                <a role="button" class="navbar-burger burger has-text-black" data-target="navMenu" aria-label="menu"
+                    aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+
+            </div>
+
+            <!-- Navbar-menyen -->
+            <nav class="navbar-menu" id="navMenu">
+                <div class="navbar-meny">
+                    <div class="navbar-start">
+                        <a class="navbar-item navtext" href="../1. Startside/startside.html">STARTSIDE</a>
+                        <a class="navbar-item navtext" href="../2. Ansatte/Ansatte.html">ANSATTE</a>
+                        <a class="navbar-item navtext" href="../3. Meny/Meny.html">MENY</a>
+                        <a class="navbar-item navtext" href="../4. Restauranter/Restauranter.html">RESTURANTER</a>
+                        <a class="navbar-item navtext is-active" href="../5. Salg/sale.html">SALG</a>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!--CARDS-->
+    <main>
+        <div class="top-field">  
+        </div>
+
+        <div class="container">
+            <main class="columns">
+                <section class="column">
+                    <div id="sales-section" class="columns is-multiline"></div>
+                </section>
+            </main>
+        </div>
+
+        <br>
+        <br>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- DROP DOWN -->
+    <div class="container extra-info is-hidden">
+        <main class="columns">
+            <section class="column is-three-fifths">
+                <div class="card">
+                    <div class="card-image column">
+                        <br>
+                        <figure class="image is-2by2">
+                            <img src="../images/sagenepie2.png" alt="pie">             
+                        </figure>
+                        <br>
+                    </div>
+                </div>
+            </section>
+
+    <!-- mye <br> for å ha samme lengde på cards -->
+
+            <section class="column is-two-fifth">
+                <div class="card">
+                    <div class="card-image column has-text-centered">
+                        <div class="card-content info-txt">
+                            <br>
+                            <br>
+                            <p class="title is-size-5">Sagene - Mai måned</p>
+                            <p class="is-size-5">Total inntekt: 600 000 NOK </p>
+                            <p class="is-size-5">Total utgift: 120 000 NOK</p>
+                            <p class="is-size-5">Mest solgt: Diavola</p>
+                            <p class="is-size-5">Minst solgt: Hawaii</p>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>                            
+                            <br>
+                            <p class="title is-size-5">Endringer fra forrige måned</p>
+                            <p class="pos-percent  is-size-5">Total inntekt: + 4.5% </p>
+                            <p class="neg-percent is-size-5">Total utgift: - 2.3%</p>
+                            <br>
+                            <br>
+                            <br>
+                            <br>                            
+                            <br>   
+                        </div>
+                    </div>
+                </div>
+            </section>               
+        </main>
+    </div>
+
+
+    <div class="container extra-graph is-hidden">
+        <main class="columns">
+            <section class="column is-half">
+                <div class="card">
+                    <div class="card-image column">
+                        <br>
+                        <figure class="image is-2by2">
+                            <img src="../images/pizzapie.png" alt="pie">             
+                        </figure>
+                        <br>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="column is-two-fifth">
+                <div class="card">
+                    <div class="card-image column has-text-centered">
+
+                        <figure class="image is-2by2">
+                            <img src="../images/sageneGraf.png" alt="pie">             
+                        </figure>
+
+                        <br>
+                        <br>
+
+                        <div class="card-content info-txt">
+                            <p class="title is-size-5">*Tallene er i millioner </p>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+                       
+        </main>
+    </div>
+
+    <br>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- INFOBOKS -->
+    <div class="info-box-container has-text-centered">
+        <img src="../images/info.png" alt="info" class="info-box-picture">
+        <p class="infobox-text  title is-size-5"> Her vil det være relevant informasjon til brukeren om hvordan man skal navigere seg gjennom nettsiden.</p>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FOOTER -->
+    <footer class="footer footer-specification">
+        
+        <div class="content has-text-centered">
+            <p>
+                © COPYRIGHT 2021 GYLDNE PIZZA
+            </p>
+        </div>
+        
+    </footer>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+        
+    
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- Script for hamburger-menyen - åpne/lukke-->
+    <script src="../1. Startside/hamburgermeny.js"></script>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="./startside.css">
+    <title>Startside</title>
+</head>
+<body>
+
+    
+     <!-- Navbaren - Følger alle sidene -->
+     <nav class="navbar header" role="navigation" aria-label="main navigation">
+
+        <!-- Logoen i navbaren - linker til startsiden -->
+        <div class="navbar-brand">
+            <a class="navbar-item logo" href="./startside.html">
+                <img src="../images/logo.png" alt="logo" style="max-height: 100px;">
+            </a>
+        
+            <!-- Hamburger mney - kommer frem ved visning på små skjermer-->
+            <a role="button" class="navbar-burger burger has-text-black" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+
+        </div>
+
+        <!-- Navbar-menyen -->
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-start">
+                        <a class="navbar-item navtext is-active" href="../1. Startside/startside.html">STARTSIDE</a>
+                        <a class="navbar-item navtext" href="../2. Ansatte/Ansatte.html">ANSATTE</a>
+                        <a class="navbar-item navtext" href="../3. Meny/Meny.html">MENY</a>
+                        <a class="navbar-item navtext" href="../4. Restauranter/Restauranter.html">RESTURANTER</a>
+                        <a class="navbar-item navtext" href="../5. Salg/sale.html">SALG</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- MENY-->
+    <div class="columns menu">
+    
+        <div class="column is-half">    
+            <div class="column menu-card" style="width:100%;">
+                <a href="../2. Ansatte/Ansatte.html">
+                    <img src="../images/ansatteforside.png" alt="ANSATTE" class="menu-card-images">
+                    <h1 class="menu-card-text">ANSATTE</h1>
+                </a>
+            </div>
+            
+            <div class="column menu-card">
+                <a href="../3. Meny/Meny.html">
+                    <img src="../images/menyforside.png" alt="MENY" class="menu-card-images">
+                    <h1 class="menu-card-text">MENY</h1>
+                </a>
+            </div>
+            
+        </div>
+            
+        <div class="column is-half">
+            <div class="column menu-card">
+                <a href="../4. Restauranter/Restauranter.html">
+                    <img src="../images/resturanterforside.png" alt="RESTAURANTER" class="menu-card-images">
+                    <h1 class="menu-card-text">RESTAURANTER</h1>
+                </a>
+            </div>
+            
+            <div class="column menu-card">
+                <a href="../5. Salg/sale.html">
+                    <img src="../images/salgforside.png" alt="SALG" class="menu-card-images">
+                    <h1 class="menu-card-text">SALG</h1>
+                </a>
+            </div>
+        </div> 
+            
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        
+        
+        
+        
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- INFOBOKS -->
+    <div class="info-box-container has-text-centered">
+        <img src="../images/info.png" alt="info" class="info-box-picture">
+        <p class="infobox-text title is-size-5"> Her vil det være relevant informasjon til brukeren om hvordan man skal navigere seg gjennom nettsiden.</p>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FOOTER -->
+    <footer class="footer footer-specification">
+        
+        <div class="content has-text-centered">
+            <p>
+                © COPYRIGHT 2021 GYLDNE PIZZA
+            </p>
+        </div>
+        
+    </footer>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+        
+        
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- Script for hamburger-menyen - åpne/lukke-->
+        <script src="./hamburgermeny.js"></script>
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+    </body>
+    </html>

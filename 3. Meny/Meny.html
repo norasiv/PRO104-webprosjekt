@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meny</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="./meny.css">
+   
+    <script type="module" src="./modalsMenu.js"></script>
+    <script type="module" src="./nyeRetter.js"></script>
+    <script type="module" src="./pizzaType.js"></script>
+    <script type="module" src="./drikkeType.js"></script>
+    <script type="module" src="./sokMeny.js"></script>
+    <script type="module" src="./deletePizza.js"></script>
+    <script type="module" src="./editPizza.js"></script>
+
+
+</head>
+<body>
+    
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- Navbaren - Følger alle sidene -->
+    <nav class="navbar header" role="navigation" aria-label="main navigation">
+
+        <!-- Logoen i navbaren - linker til startsiden -->
+        <div class="navbar-brand">
+            <a class="navbar-item logo" href="../1. Startside/startside.html">
+                <img src="../images/logo.png" alt="logo" style="max-height: 100px;">
+            </a>
+        
+            <!-- Hamburger mney - kommer frem ved visning på små skjermer-->
+            <a role="button" class="navbar-burger burger has-text-black" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+
+        </div>
+
+        <!-- Navbar-menyen -->
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-start">
+                        <a class="navbar-item navtext" href="../1. Startside/startside.html">STARTSIDE</a>
+                        <a class="navbar-item navtext" href="../2. Ansatte/Ansatte.html">ANSATTE</a>
+                        <a class="navbar-item navtext is-active" href="../3. Meny/Meny.html">MENY</a>
+                        <a class="navbar-item navtext" href="../4. Restauranter/Restauranter.html">RESTURANTER</a>
+                        <a class="navbar-item navtext" href="../5. Salg/sale.html">SALG</a>
+            </div>
+        </div>
+
+    </nav>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- søkefelt -->
+    <section class="section">
+        <div class="container py-3">
+            <div class="columns">
+
+                <!--dette er de første kanppene i venstre hjørne-->
+                <div class="column">
+                    
+                        <button id="pbtn" class="button search-btn is-outlined">Pizza</button>
+                        <button id="dbtn" class="button search-btn is-outlined">Drikke</button>
+                    
+                </div>
+
+                <!-- søke feltet-->
+                <div class="column">
+                    <div class="field has-addons ">
+                        <div class="control is-expanded">
+                            <input id="searchInput" class="input" type="text" placeholder="Søk i Meny"> 
+                        </div>
+                        <div class="control">
+                        <button id="searchBtn" class="button search-btn is-outlined">Søk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- legg til knappen høyre hjørne-->
+                <div class="column">
+                    
+                        <button id="lgbtn" class="button search-btn is-outlined">Legg til Meny</button>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- pizza og drikkemeny -->
+    <div class="container">
+        <main class="columns">
+            <section class="column">
+                
+                <div id="pizza-type-div" class="columns is-multiline"></div>
+            
+            </section>
+             
+        </main>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- INFOBOKS -->
+    <div class="info-box-container has-text-centered">
+        <img src="../images/info.png" alt="info" class="info-box-picture">
+        <p class="infobox-text  title is-size-5"> Her vil det være relevant informasjon til brukeren om hvordan man skal navigere seg gjennom nettsiden.</p>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FOOTER -->
+    <footer class="footer footer-specification">
+        
+        <div class="content has-text-centered">
+            <p>
+                © COPYRIGHT 2021 GYLDNE PIZZA
+            </p>
+        </div>
+        
+    </footer>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- Script for hamburger-menyen - åpne/lukke-->
+    <script src="../1. Startside/hamburgermeny.js"></script>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- modal -->
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Legg til menyen</p>
+            <button id="exit" class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+
+              <form>
+
+                <div class="field">
+                    <label class="label">Navn</label>
+                        <div class="control">
+                            <input id="name-input" type="text" class="input" placeholder="Skriv inn navn...">
+                        </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Beskrivelse</label>
+                        <div class="control">
+                            <input id="description-input" type="text" class="input" placeholder="Skriv inn beskrivelse...">
+                        </div>
+                </div>
+
+                <div class="field">
+                        <label class="label">Allergener</label>
+                        <div class="control">
+                            <input id="allergens-input" type="text" class="input" placeholder="Skriv inn allergener...">
+                        </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Pris</label>
+                    <div class="control">
+                         <input id="price-input" type="text" class="input" placeholder="Skriv inn pris...">
+                    </div>
+                </div>
+
+              </form>
+
+            
+          </section>
+          <footer class="modal-card-foot">
+            <button id="save-btn" class="button is-success">Legg til pizza</button>
+            <button id="save-drikke-btn" class="button is-success"> legg til drikke</button>
+            <button id="cancel-btn" class="button">Cancel</button>
+          </footer>
+        </div>
+      </div>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- Redigere Modal  -->
+    <div class="modal edit-modal">
+        <div class="modal-background edit-modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Redigere ansatt</p>
+            <button id="exit-btn-two" class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+
+              <form>
+
+                <div class="field">
+                    <label class="label">Navn</label>
+                        <div class="control">
+                            <input id="location-input" type="text" class="input" placeholder="Pepperoni">
+                        </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Beskrivelse</label>
+                        <div class="control">
+                            <input id="job-input" type="text" class="input" placeholder="Tomatsaus, Ost og Pepperoni.">
+                        </div>
+                </div>
+
+                <div class="field">
+                        <label class="label">Allergener</label>
+                        <div class="control">
+                            <input id="name-input" type="text" class="input" placeholder="Hvete, Melk, Selleri">
+                        </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Pris</label>
+                    <div class="control">
+                         <input id="number-input" type="text" class="input" placeholder="179,-kr">
+                    </div>
+                </div>
+
+              </form>
+
+
+            
+          </section>
+          <footer class="modal-card-foot">
+            <button id="save-changes-btn" class="button is-success">Lagre endringer</button>
+            <button id="cancel-btn-two" class="button">Cancel</button>
+          </footer>
+        </div>
+      </div>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+
+</body>
+</html>
+

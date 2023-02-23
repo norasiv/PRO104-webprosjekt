@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="./Restauranter.css">
+    <title>Restauranter</title>
+</head>
+<body>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+         <!-- Navbaren - Følger alle sidene -->
+         <nav class="navbar header" role="navigation" aria-label="main navigation">
+
+            <!-- Logoen i navbaren - linker til startsiden -->
+            <div class="navbar-brand">
+                <a class="navbar-item logo" href="../1. Startside/startside.html">
+                    <img src="../images/logo.png" alt="logo" style="max-height: 100px;">
+                </a>
+            
+                <!-- Hamburger mney - kommer frem ved visning på små skjermer-->
+                <a role="button" class="navbar-burger burger has-text-black" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+    
+            </div>
+    
+            <!-- Navbar-menyen -->
+            <div class="navbar-menu" id="navMenu">
+                <div class="navbar-start">
+                        <a class="navbar-item navtext" href="../1. Startside/startside.html">STARTSIDE</a>
+                        <a class="navbar-item navtext" href="../2. Ansatte/Ansatte.html">ANSATTE</a>
+                        <a class="navbar-item navtext" href="../3. Meny/Meny.html">MENY</a>
+                        <a class="navbar-item navtext  is-active" href="../4. Restauranter/Restauranter.html">RESTURANTER</a>
+                        <a class="navbar-item navtext" href="../5. Salg/sale.html">SALG</a>
+                </div>
+            </div>
+    
+        </nav>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- google maps iframe som viser alle restauranter -->
+    <iframe src="https://www.google.no/maps/d/u/0/embed?mid=1zPsaz5SyVj7yoxSgUTa0RSNlNPmfU1Ul"
+     id="google-map" >
+    </iframe>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- starten av alle kortene -->
+    <section class="columns is-gapless is-centered">
+
+        <!-- Bislett sin kort info -->
+        <article class="column is-one-fifth ">
+        <div class="is-flex">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-20x20">
+                            <img src="../images/Resturant-1.png" id="bilder" alt="Bislett">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title is-4 has-text-centered">Bislett</p>
+                        <hr>
+                        <p>Bislettgate 17, 0134 <br> Oslo <br>
+                            +47 937 83 467 <br>
+                        bord@gyldnepizza.no <br>
+                    Man-Lør: 12-22 <br>
+                Søndag: 13-22</p>
+                    </div>
+                </div>
+
+            </div>
+            </article>
+
+            <!-- Kampen sin kort info -->
+            <article class="column is-one-fifth">
+                <div class="is-flex">
+                    <div class="card">
+                        <div class="card-image">
+                        <figure class="image is-20x20">
+                            <img src="../images/Resturant-2.png" id="bilder" alt="Kampen">
+                        </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4 has-text-centered">Kampen</p>
+                            <hr>
+                            <p>Kampenveien 5,0145 <br> Oslo <br>
+                                +47 937 83 467 <br>
+                            bord@gyldnepizza.no <br>
+                        Man-Lør: 12-22 <br>
+                    Søndag: 13-22</p>
+                        </div>
+
+
+                </div>
+            </article>
+
+            <!-- Majorstuen sin kort info -->
+            <article class="column is-one-fifth">
+                <div class="is-flex">
+                    <div class="card">
+                        <div class="card-image">
+                        <figure class="image is-20x20">
+                            <img src="../images/Resturant-3.png" id="bilder" alt="Majorstuen">
+                        </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4 has-text-centered" >Majorstuen</p>
+                            <hr>
+                            <p>Frognergate 92, 0168 <br> Oslo <br>
+                                +47 937 83 467 <br>
+                            bord@gyldnepizza.no <br>
+                        Man-Lør: 12-22 <br>
+                    Søndag: 13-22</p>
+                        </div>
+                </div>
+            </article>
+
+            <!-- Sagene sin kort info -->
+            <article class="column is-one-fifth">
+                <div class="is-flex">
+                    <div class="card">
+                        <div class="card-image">
+                        <figure class="image is-20x20">
+                            <img src="../images/Resturant-4.png" id="bilder" alt="Sagene">
+                        </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4 has-text-centered">Sagene</p>
+                            <hr>
+                            <p>Sageneveien 33, 0121 <br> Oslo <br>
+                                +47 937 83 467 <br>
+                            bord@gyldnepizza.no <br>
+                        Man-Lør: 12-22 <br>
+                    Søndag: 13-22</p>
+                        </div>
+                </div>
+            </article>
+    </section>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- INFOBOKS -->
+    <div class="info-box-container has-text-centered">
+        <img src="../images/info.png" alt="info" class="info-box-picture">
+        <p class="infobox-text  title is-size-5"> Her vil det være relevant informasjon til brukeren om hvordan man skal navigere seg gjennom nettsiden.</p>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FOOTER -->
+    <footer class="footer footer-specification">
+        
+        <div class="content has-text-centered">
+            <p>
+                © COPYRIGHT 2021 GYLDNE PIZZA
+            </p>
+        </div>
+        
+    </footer>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+        
+        
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- Script for hamburger-menyen - åpne/lukke-->
+    <script src="../1. Startside/hamburgermeny.js"></script>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+</body>
+</html>
